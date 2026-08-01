@@ -1,8 +1,29 @@
 aid: springpath
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/springpath.png
 name: Springpath
-description: Springpath is a company surfaced as a portfolio company of redpoint-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Springpath Inc. was a Sunnyvale, California hyperconverged infrastructure
+  startup, backed by Redpoint Ventures, whose distributed data-platform
+  technology became the basis for Cisco HyperFlex Systems. Cisco moved to
+  acquire the company (announced 2016) and folded its software into the
+  HyperFlex product line. Cisco announced the discontinuation of HyperFlex
+  infrastructure products in September 2023, and Springpath no longer operates
+  as an independent company. The springpathinc.com domain is now served by
+  Cisco nameservers and no longer hosts a live website, developer portal, or
+  public API. This profile is retained in the API Evangelist network as an
+  historical/acquired-company record; there is no independent API surface to
+  enrich.
 url: https://raw.githubusercontent.com/api-evangelist/springpath/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +31,19 @@ x-backed-by:
 - redpoint-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: cisco
+x-successor-product: Cisco HyperFlex (discontinued September 2023)
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Acquired
+- Hyperconverged Infrastructure
+- Data Storage
+- Enterprise Infrastructure
+- Cisco
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +53,12 @@ maintainers:
 common:
 - type: Website
   url: http://www.springpathinc.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  notes: >-
+    Acquired by Cisco (technology became Cisco HyperFlex, discontinued Sept
+    2023); springpathinc.com is dead (connection refused, Cisco nameservers).
+    No independent API surface; no artifacts fabricated.
